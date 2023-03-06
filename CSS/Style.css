@@ -1,0 +1,257 @@
+
+body{
+	background-color: #f6f5f5;
+    margin: 0;
+	margin-right: 0px;
+	padding: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    width: 100%;
+    height: 75vh;
+    background-image: url(../Imagens/background-01-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	background-color: #ffc531;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+	padding: 0px 5%;
+}
+
+nav ul
+{
+	display: flex;
+}
+
+nav ul li a {
+	margin: 15px;
+	font-family: poppins;
+	color: black;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+nav ul li:active{
+    transform: scale(1.1);
+}
+
+.textlefttop p a:nth-child(1) {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+}
+
+
+.textlefttop p:nth-child(2) {
+    font-family: poppins;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffc531;
+    font-size: 70px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.textlefttop p:nth-child(3) {
+    font-family: sans-serif;
+    color: #cccccc;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+
+.textlefttop {
+    line-height: 0px;
+    margin: 45px 0px 25px;
+}
+
+
+.textlefttop {
+    position: absolute;
+    left: 13%;
+    top: 30%;
+    transform: translate(22%, 0%);
+}
+
+.image-background01 {
+    height: 600px;
+    position: absolute;
+    bottom: 0px;
+    left: 67%;
+    transform: translateX(-30%);
+}
+
+.button-contato {
+    width: 160px;
+	height: 50px;
+	border-radius: 7px;
+	font-family: poppins;
+	font-weight: 900;
+	font-size: 16px;
+	outline: none;
+	margin: 0px 0px;
+    border: none;
+    background: #ffc531;
+}
+
+.button-contato:hover {
+    transform: scale(1.1);
+}
+
+/* Segudna parte do site (ARTES) e seus cards*/
+
+.programing {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../Imagens/background-02-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.textoprincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textoprincipal h1{
+    margin-top: 10px;
+    font-family: poppins;
+    font-size: 100px;
+    color: #15283a;
+    font-weight: bold;
+  }
+
+.content {
+    font-family: sans-serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 400px;
+}
+
+.card {
+    background: #ffff;
+    box-shadow: 0px 2px 5px #34567573;
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px;
+}
+
+.mediacard {
+    background: url(../Imagens/primeiro-projeto-html.png) center/cover;
+    height: 350px;
+    width: 100%;
+}  
+
+.tittle {
+    color: #15283a;
+}
+
+.secondtext { 
+    color: #2234469d;
+}
+
+.topcard {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.bottomcard {
+    padding: 20px;
+}
+
+.actions {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+
+.actions i {
+    color: #000;
+    transition: all 0.3s ease;
+  }
+  
+  .actions:active i {
+    color: #f00;
+    transform: scale(1.9);
+  }
+  
+
+  /* Footer */
+
+  footer {
+    background-color: #15283a;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    
+  }
+
+  
+  /* Smartphones */
+
+  
+@media screen and (max-width: 390px) {
+    nav ul {
+      display: none;
+    }
+    .textlefttop {
+      left: 50%;
+      top: 25%;
+      transform: translate(-50%, 0%);
+    }
+    .textlefttop p:nth-child(2) {
+      font-size: 50px;
+      margin-top: 30px;
+    }
+    .textlefttop p:nth-child(3) {
+      font-size: 20px;
+    }
+    .image-background01 {
+      height: 400px;
+      bottom: -20px;
+    }
+    .button-contato {
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+    }
+    .programing {
+      height: auto;
+    }
+    .textoprincipal h1 {
+      font-size: 50px;
+    }
+    .card {
+      width: 300px;
+    }
+  }
